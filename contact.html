@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact - Wessam Ahmad Dahadha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Wessam Ahmad Dahadha" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔐</text></svg>">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html">Wessam<span>.</span></a>
+      <button class="nav__toggle" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+      <ul class="nav__list">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#tools">Tools</a></li>
+        <li><a href="index.html#goals">Goals</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a class="btn btn--small" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero hero--compact">
+    <div class="hero__content hero__content--center">
+      <h1 class="title">Get in Touch</h1>
+      <p class="subtitle">I’m open to collaborations, internships, and security projects.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section section--panel">
+      <h2>Send a Message</h2>
+      <!-- استبدل your-id أدناه بمعرّفك من Formspree إن رغبت -->
+      <form action="https://formspree.io/f/your-id" method="POST" class="form">
+        <label for="name">Your Name</label>
+        <input id="name" name="name" type="text" placeholder="John Doe" required>
+
+        <label for="email">Your Email</label>
+        <input id="email" name="_replyto" type="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Hello Wessam, I’d like to discuss..." required></textarea>
+
+        <button class="btn" type="submit">Send</button>
+      </form>
+
+      <div class="cta" style="margin-top:14px;">
+        <a class="btn btn--ghost" href="mailto:wesamahmad957@gmail.com">Or Email Directly</a>
+        <a class="btn btn--small" href="index.html">Back to Home</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Direct Email: <a href="mailto:wesamahmad957@gmail.com">wesamahmad957@gmail.com</a></p>
+    <p>© <span id="y"></span> Wessam Ahmad Dahadha</p>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav__toggle');
+    const list = document.querySelector('.nav__list');
+    btn.addEventListener('click', () => {
+      const open = list.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

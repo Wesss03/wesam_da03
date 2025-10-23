@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wessam Ahmad Dahadha - Cybersecurity Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Cybersecurity student portfolio for Wessam Ahmad Dahadha" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔐</text></svg>">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html">Wessam<span>.</span></a>
+      <button class="nav__toggle" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+      <ul class="nav__list">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#tools">Tools</a></li>
+        <li><a href="index.html#goals">Goals</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a class="btn btn--small" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="about">
+    <div class="hero__content">
+      <div class="hero__text">
+        <h1 class="title">Wessam Ahmad Dahadha</h1>
+        <p class="subtitle">Cybersecurity • Fourth-Year Student</p>
+
+        <div class="badges">
+          <span class="badge">Teamwork</span>
+          <span class="badge">Analytical Thinking</span>
+          <span class="badge">Problem-Solving</span>
+          <span class="badge">Communication</span>
+          <span class="badge">Adaptability</span>
+        </div>
+
+        <div class="cta">
+          <a class="btn" href="mailto:wesamahmad957@gmail.com">Email Me</a>
+          <a class="btn btn--ghost" href="#projects">See Projects</a>
+        </div>
+      </div>
+
+      <div class="hero__photo">
+        <!-- استخدم absolute URL للصورة على GitHub Pages الخاص فيك -->
+        <img
+          src="https://wesss03.github.io/wesam_da03/images/Personal.jpg?v=1"
+          alt="Portrait of Wessam Ahmad Dahadha"
+          loading="lazy" width="1024" height="1024"
+          onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/wesss03/wesam_da03/main/images/Personal.jpg?v=1';"
+        >
+      </div>
+    </div>
+    <div class="hero__wave" aria-hidden="true"></div>
+  </header>
+
+  <main class="container">
+
+    <!-- TOOLS -->
+    <section id="tools" class="section">
+      <div class="section__head">
+        <h2>Favorite Tools & Languages</h2>
+        <p class="section__desc">A compact set of technologies I enjoy using.</p>
+      </div>
+
+      <div class="cards">
+        <article class="tool">
+          <h3>Python</h3>
+          <p>Clean scripting, automation and quick prototyping.</p>
+          <a class="link" href="https://www.python.org/" target="_blank" rel="noopener">python.org →</a>
+        </article>
+        <article class="tool">
+          <h3>OpenSSL</h3>
+          <p>Crypto primitives for secure channels and PKI tooling.</p>
+          <a class="link" href="https://www.openssl.org" target="_blank" rel="noopener">openssl.org →</a>
+        </article>
+        <article class="tool">
+          <h3>Ansible</h3>
+          <p>Idempotent automation for hardening and provisioning.</p>
+          <a class="link" href="https://www.ansible.com" target="_blank" rel="noopener">ansible.com →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- GOALS -->
+    <section id="goals" class="section section--panel">
+      <div class="section__head">
+        <h2>Where Do I See Myself in 4 Years?</h2>
+      </div>
+      <p>
+        I aim to enhance my cybersecurity skills by obtaining recognized certifications (CISSP, CEH) and specializing in penetration testing & vulnerability analysis. I want to work on securing systems from advanced threats and help protect sensitive information. I also plan to stay current with behavioral monitoring and AI-assisted defense. Long term, I aspire to leadership roles where I can craft and implement effective security strategies.
+      </p>
+      <div class="timeline">
+        <div class="dot"></div>
+        <div class="step">
+          <h4>Year 1</h4>
+          <p>Solidify fundamentals, Python security tooling, Linux hardening.</p>
+        </div>
+        <div class="step">
+          <h4>Year 2</h4>
+          <p>CEH prep, lab practice, web/app pentesting.</p>
+        </div>
+        <div class="step">
+          <h4>Year 3</h4>
+          <p>CISSP domains overview, blue team rotation, SIEM & detection.</p>
+        </div>
+        <div class="step">
+          <h4>Year 4</h4>
+          <p>Lead small projects, security architecture exposure.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section__head">
+        <h2>Projects</h2>
+        <p class="section__desc">Selected work and learning artifacts.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card__head">
+            <h3>Vuln Scanner (CLI)</h3>
+            <span class="chip">Python</span>
+          </div>
+          <p>Lightweight fingerprinting & CVE checks to prioritize risk.</p>
+          <p class="meta">Nmap · Requests · JSON feeds</p>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <h3>Secure File Transfer</h3>
+            <span class="chip">Crypto</span>
+          </div>
+          <p>Demo of E2E sharing using OpenSSL primitives and TLS.</p>
+          <p class="meta">AES-GCM · TLS · PKI</p>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <h3>IaC Hardening Playbooks</h3>
+            <span class="chip">Automation</span>
+          </div>
+          <p>Baseline hardening aligned to CIS benchmarks with Ansible.</p>
+          <p class="meta">Ubuntu · CIS · Ansible</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Direct Email: <a href="mailto:wesamahmad957@gmail.com">wesamahmad957@gmail.com</a></p>
+    <p>© <span id="y"></span> Wessam Ahmad Dahadha • <a href="https://wesss03.github.io/wesam_da03/">Site URL</a></p>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const btn = document.querySelector('.nav__toggle');
+    const list = document.querySelector('.nav__list');
+    btn.addEventListener('click', () => {
+      const open = list.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    // Footer year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
